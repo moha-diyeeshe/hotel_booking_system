@@ -80,14 +80,11 @@ WSGI_APPLICATION = 'Hotel_booking_system.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.oracle',
-        'NAME': 'xe',  # the service name
-        'USER': 'system',  # oracle server user name
-        'PASSWORD': 'Mohan173',  # oracle user password
-        'HOST': 'localhost',  # the host of the oracle server
-        'PORT': '1521',  #oracle port 
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
 
 
 
